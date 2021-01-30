@@ -1,4 +1,4 @@
-#尋找輪廓
+#尋找輪廓 #test12
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt

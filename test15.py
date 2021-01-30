@@ -1,5 +1,4 @@
-#test10 
-import cv2
+#gussianblur 
 import numpy as np
 from matplotlib import pyplot as plt
 
@@ -13,7 +12,6 @@ ret2, th2 = cv2.threshold(img, 0, 255, cv2.THRESH_BINARY+cv2.THRESH_OTSU)
 # （9,9）为高斯核的大小，8 为标准差
 blur = cv2.GaussianBlur(img, (5, 5), 2)
 # 阈值一定要设为 0！
-
 ret3, th3 = cv2.threshold(blur, 0, 255, cv2.THRESH_BINARY+cv2.THRESH_OTSU)
 cv2.imshow("origin", img)
 cv2.imshow("th1", th1)
